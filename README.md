@@ -1,7 +1,21 @@
 # Twitter clone
 
+<em>Meu primeiro projeto angular!</em> 
 
-<em> <!---Padrão Angular---> </em>
+Projeto realizado segundo a orientação do bootcamp, Potência Tech Angular Developer - Powered by iFood oferecido pela plataforma DIO, Digital Inovation One.
+## Status - 
+ - O projeto ainda está incompleto.
+ - Ajustes futuros: 
+ 	1. Tornar layout reponsível, ao ajustar a caixa de new post para ficar ao lado dos tweets em telas maiores.
+	2. Adicionar uma forma do usúario escolher seu username e sua foto.
+	3. Guardar os tweets antigos.
+	4. Adicionar um dark mode.
+
+ - Este foi o meu primeiro projeto angular e com ele aprendi toda a estrutura básica angular, assim como a utilização do tailwind CSS e suas grandes capacidades, gostei muito de como o angular funciona!
+
+<hr>
+
+## <em>Padrão Angular</em>
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.5.
 
