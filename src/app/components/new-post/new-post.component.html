@@ -1,19 +1,14 @@
 <main class="w-[400px] bg-white rounded-lg m-auto shadow p-6 mb-8 md:w-[600px]">
 	<section class="flex justify-center items-start w-full">
 		<!-- User -->
-		<figure class="flex-shrink-0 mr-6">
-			<div
-				class="cursor-pointer font-semibold w-12 h-12 bg-gray-300 flex items-center justify-center rounded-full"
-			>
-				TU
-			</div>
-		</figure>
+		<app-avatar />
 
 		<div class="flex-1">
 			<textarea
-				[(ngModel)]="tweetMassage"
+				(keyup.enter)="sendTweet()"
+				[(ngModel)]="tweetMessage"
 				(input)="changeTweet()"
-				[maxlength] = "tweetMaxLength"
+				[maxlength]="tweetMaxLength"
 				class="mb-2 bg-gray-200 rounded-lg focus:outline-none focus:shadow-outline focus:bg-gray-100 border border-transparent py-2 px-4 block w-full appearance-none leading-normal font-light resize-none placeholder-gray-900 placeholder:text-xl"
 				rows="3"
 				placeholder="No que você está pensando? 🤔"
@@ -26,13 +21,13 @@
 			<!-- Interative -->
 			<aside class="flex justify-end items-baseline font-thin text-gray-400">
 				<span class="mr-5">
-					<p>{{ tweetChar }} / {{tweetMaxLength}}</p>
+					<p>{{ tweetChar }} / {{ tweetMaxLength }}</p>
 				</span>
 
 				<div>
 					<button
-					(click) = "sendTweet()"	
-					type="button"
+						(click)="sendTweet()"
+						type="button"
 						class="w-32 shadow text-center text-shadow focus:outline-none border-transparent py-2 px-5 rounded-lg bg-blue-600 hover:bg-blue-700 font-medium text-white mt-2"
 					>
 						Tweet

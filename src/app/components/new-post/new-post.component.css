@@ -1,0 +1,14 @@
+@media screen and (max-width: 400px) {
+	button {
+		display: none;
+	}
+	main {
+		width: fit-content;
+		width: moz-fit-content;
+		padding: 0.8rem;
+	}
+	section {
+		width: fit-content;
+		width: moz-fit-content;
+    }
+}

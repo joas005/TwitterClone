@@ -2,18 +2,16 @@
     <app-header />
 </header>
 
-<main class="flex 
-items-center
-justify-center
-m-auto">
+<main class="flex items-center justify-center m-auto">
     <section>
         <app-new-post />
-    <article>
-        Tweets
+    <article class="flex flex-col items-center container mx-auto"
+    *ngFor="let tw of tweets">
+        <app-tweets [tweetMessage] = tw />
     </article>
     </section>
 </main>
 
-<footer class="mt-10 w-full fixed bottom-0">
+<footer class="mt-10 m-auto w-full fixed bottom-0">
     <app-footer />
 </footer>
